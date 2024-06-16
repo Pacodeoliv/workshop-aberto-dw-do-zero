@@ -10,8 +10,9 @@ python = "^3.12"
 pandas = "^2.2.2"
 sqlalchemy = "^2.0.30"
 python-dotenv = "^1.0.1"
-psycopg2-binary = "^2.9.9"
 yfinance = "^0.2.40"
+psycopg2-binary = "^2.9.9"
+dbt-postgres = "^1.8.1"
 
 
 [build-system]

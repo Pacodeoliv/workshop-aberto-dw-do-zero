@@ -1,0 +1,259 @@
+[0m18:32:09.633325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd41088f9e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd41088d9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd40fe1b860>]}
+
+
+============================== 18:32:09.638705 | be895bf9-35c1-43a3-9829-ab9610b1f0d1 ==============================
+[0m18:32:09.638705 [info ] [MainThread]: Running with dbt=1.8.2
+[0m18:32:09.639457 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/paco/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:32:23.523019 [debug] [MainThread]: Starter project path: /home/paco/workshop/workshop-aberto-dw-do-zero/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m18:32:23.528320 [info ] [MainThread]: 
+Your new dbt project "dwhprojeto" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:32:23.529066 [info ] [MainThread]: Setting up your profile.
+[0m18:32:23.530300 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m18:32:23.531650 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 13.952072, "process_user_time": 1.489953, "process_kernel_time": 0.235584, "process_mem_max_rss": "87536", "process_in_blocks": "56584", "process_out_blocks": "72", "command_success": false}
+[0m18:32:23.532541 [debug] [MainThread]: Command `dbt init` failed at 18:32:23.532371 after 13.95 seconds
+[0m18:32:23.533051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd41011b830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4108b73b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd410491e80>]}
+[0m18:32:23.533810 [debug] [MainThread]: Flushing usage events
+[0m18:43:23.755970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2bca14ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2bc3382c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2bad6da00>]}
+
+
+============================== 18:43:23.762694 | c2e27b29-241a-4a2b-906e-4eaae2b56717 ==============================
+[0m18:43:23.762694 [info ] [MainThread]: Running with dbt=1.8.2
+[0m18:43:23.763619 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/paco/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:43:23.792425 [info ] [MainThread]: dbt version: 1.8.2
+[0m18:43:23.792975 [info ] [MainThread]: python version: 3.12.3
+[0m18:43:23.793414 [info ] [MainThread]: python path: /home/paco/workshop/workshop-aberto-dw-do-zero/.venv/bin/python
+[0m18:43:23.793884 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m18:43:23.794455 [info ] [MainThread]: Using profiles dir at /home/paco/.dbt
+[0m18:43:23.795046 [info ] [MainThread]: Using profiles.yml file at /home/paco/.dbt/profiles.yml
+[0m18:43:23.795549 [info ] [MainThread]: Using dbt_project.yml file at /home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml
+[0m18:43:23.796132 [info ] [MainThread]: Configuration:
+[0m18:43:23.796655 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m18:43:23.797203 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:43:23.797695 [info ] [MainThread]: Required dependencies:
+[0m18:43:23.798266 [debug] [MainThread]: Executing "git --help"
+[0m18:43:23.801429 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:43:23.802009 [debug] [MainThread]: STDERR: "b''"
+[0m18:43:23.802386 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:43:23.802806 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:43:23.803326 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:43:23.803765 [info ] [MainThread]: dbt looked for a profiles.yml file in /home/paco/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:43:23.804211 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml> not found
+
+[0m18:43:23.806592 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.10481273, "process_user_time": 1.614743, "process_kernel_time": 0.162489, "process_mem_max_rss": "88212", "process_in_blocks": "41704", "process_out_blocks": "80", "command_success": false}
+[0m18:43:23.807299 [debug] [MainThread]: Command `dbt debug` failed at 18:43:23.807182 after 0.11 seconds
+[0m18:43:23.807753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2be13c920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2bb599250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2bb9f8920>]}
+[0m18:43:23.808310 [debug] [MainThread]: Flushing usage events
+[0m19:22:35.741598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6615c99a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6616a110a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f661579be60>]}
+
+
+============================== 19:22:35.747147 | f72f430c-643f-4824-a809-888531ba7d48 ==============================
+[0m19:22:35.747147 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:22:35.747921 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/paco/workshop/workshop-aberto-dw-do-zero', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m19:22:35.771050 [info ] [MainThread]: dbt version: 1.8.2
+[0m19:22:35.771644 [info ] [MainThread]: python version: 3.12.3
+[0m19:22:35.772147 [info ] [MainThread]: python path: /home/paco/workshop/workshop-aberto-dw-do-zero/.venv/bin/python
+[0m19:22:35.772634 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m19:22:35.778794 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_HOST_PROD'
+[0m19:22:35.781450 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.09398451, "process_user_time": 1.539995, "process_kernel_time": 0.111634, "process_mem_max_rss": "87468", "process_in_blocks": "82232", "process_out_blocks": "16", "command_success": false}
+[0m19:22:35.782310 [debug] [MainThread]: Command `dbt debug` failed at 19:22:35.782134 after 0.09 seconds
+[0m19:22:35.782833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6615a685c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66156fa4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66151fb140>]}
+[0m19:22:35.783370 [debug] [MainThread]: Flushing usage events
+[0m19:29:13.036724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8874d36e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc887efbf80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8875c2630>]}
+
+
+============================== 19:29:13.043045 | a7a8da81-e804-4bce-b2af-841521c57028 ==============================
+[0m19:29:13.043045 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:29:13.043769 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/paco/workshop/workshop-aberto-dw-do-zero', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:29:13.064361 [info ] [MainThread]: dbt version: 1.8.2
+[0m19:29:13.064893 [info ] [MainThread]: python version: 3.12.3
+[0m19:29:13.065301 [info ] [MainThread]: python path: /home/paco/workshop/workshop-aberto-dw-do-zero/.venv/bin/python
+[0m19:29:13.065740 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m19:29:13.071404 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_HOST_PROD'
+[0m19:29:13.073907 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.091094725, "process_user_time": 1.548825, "process_kernel_time": 0.079939, "process_mem_max_rss": "87536", "process_in_blocks": "82368", "process_out_blocks": "16", "command_success": false}
+[0m19:29:13.074596 [debug] [MainThread]: Command `dbt debug` failed at 19:29:13.074489 after 0.09 seconds
+[0m19:29:13.075003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc886ef7830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8879c0ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc886b5ec30>]}
+[0m19:29:13.075421 [debug] [MainThread]: Flushing usage events
+[0m19:30:00.534151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7236ddbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb722d80650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb722fb6f60>]}
+
+
+============================== 19:30:00.537778 | a2688e16-4d3c-4052-ba80-c282474ab9e2 ==============================
+[0m19:30:00.537778 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:30:00.538681 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/paco/workshop/workshop-aberto-dw-do-zero', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:30:00.546973 [info ] [MainThread]: dbt version: 1.8.2
+[0m19:30:00.547623 [info ] [MainThread]: python version: 3.12.3
+[0m19:30:00.548132 [info ] [MainThread]: python path: /home/paco/workshop/workshop-aberto-dw-do-zero/.venv/bin/python
+[0m19:30:00.548997 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m19:30:00.557286 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m19:30:00.558033 [info ] [MainThread]: Using profiles dir at /home/paco/workshop/workshop-aberto-dw-do-zero
+[0m19:30:00.558488 [info ] [MainThread]: Using profiles.yml file at /home/paco/workshop/workshop-aberto-dw-do-zero/profiles.yml
+[0m19:30:00.558923 [info ] [MainThread]: Using dbt_project.yml file at /home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml
+[0m19:30:00.559355 [info ] [MainThread]: Configuration:
+[0m19:30:00.559757 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:30:00.560174 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:30:00.560573 [info ] [MainThread]: Required dependencies:
+[0m19:30:00.560997 [debug] [MainThread]: Executing "git --help"
+[0m19:30:00.563115 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:30:00.563681 [debug] [MainThread]: STDERR: "b''"
+[0m19:30:00.564121 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:30:00.564753 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:30:00.565559 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:30:00.566072 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dwhprojeto", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+
+[0m19:30:00.566523 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml> not found
+
+[0m19:30:00.567496 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.08604269, "process_user_time": 1.516896, "process_kernel_time": 0.059877, "process_mem_max_rss": "87808", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m19:30:00.568155 [debug] [MainThread]: Command `dbt debug` failed at 19:30:00.568038 after 0.09 seconds
+[0m19:30:00.568600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb722c6d190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb72309b950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb72309acc0>]}
+[0m19:30:00.569068 [debug] [MainThread]: Flushing usage events
+[0m19:32:24.855368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70348be7e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7031888f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7031a363f0>]}
+
+
+============================== 19:32:24.858672 | c8522679-18b1-47ed-88db-d74056235546 ==============================
+[0m19:32:24.858672 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:32:24.859435 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/paco/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:32:24.868242 [info ] [MainThread]: dbt version: 1.8.2
+[0m19:32:24.868813 [info ] [MainThread]: python version: 3.12.3
+[0m19:32:24.869259 [info ] [MainThread]: python path: /home/paco/workshop/workshop-aberto-dw-do-zero/.venv/bin/python
+[0m19:32:24.869691 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m19:32:24.875594 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m19:32:24.876406 [info ] [MainThread]: Using profiles dir at /home/paco/.dbt
+[0m19:32:24.876912 [info ] [MainThread]: Using profiles.yml file at /home/paco/.dbt/profiles.yml
+[0m19:32:24.877373 [info ] [MainThread]: Using dbt_project.yml file at /home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml
+[0m19:32:24.877867 [info ] [MainThread]: Configuration:
+[0m19:32:24.878293 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:32:24.878713 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:32:24.879154 [info ] [MainThread]: Required dependencies:
+[0m19:32:24.879774 [debug] [MainThread]: Executing "git --help"
+[0m19:32:24.882006 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:32:24.882641 [debug] [MainThread]: STDERR: "b''"
+[0m19:32:24.883192 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:32:24.884018 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:32:24.884748 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:32:24.885298 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dwhprojeto", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+
+[0m19:32:24.885916 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml> not found
+
+[0m19:32:24.887037 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.08323962, "process_user_time": 1.505426, "process_kernel_time": 0.059818, "process_mem_max_rss": "87744", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m19:32:24.887706 [debug] [MainThread]: Command `dbt debug` failed at 19:32:24.887583 after 0.08 seconds
+[0m19:32:24.888143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7031d5a450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7031a363f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70317aa480>]}
+[0m19:32:24.888613 [debug] [MainThread]: Flushing usage events
+[0m19:46:24.465722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c8b4920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903ce84d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903d1dfe90>]}
+
+
+============================== 19:46:24.472114 | 0eaeb4d4-8248-467c-86ec-2a316f5e8224 ==============================
+[0m19:46:24.472114 [info ] [MainThread]: Running with dbt=1.8.2
+[0m19:46:24.473310 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/paco/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:46:24.492969 [info ] [MainThread]: dbt version: 1.8.2
+[0m19:46:24.493499 [info ] [MainThread]: python version: 3.12.3
+[0m19:46:24.493939 [info ] [MainThread]: python path: /home/paco/workshop/workshop-aberto-dw-do-zero/.venv/bin/python
+[0m19:46:24.494411 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m19:46:24.500324 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m19:46:24.501380 [info ] [MainThread]: Using profiles dir at /home/paco/.dbt
+[0m19:46:24.502135 [info ] [MainThread]: Using profiles.yml file at /home/paco/.dbt/profiles.yml
+[0m19:46:24.502692 [info ] [MainThread]: Using dbt_project.yml file at /home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml
+[0m19:46:24.503184 [info ] [MainThread]: Configuration:
+[0m19:46:24.503612 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:46:24.504033 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:46:24.504768 [info ] [MainThread]: Required dependencies:
+[0m19:46:24.505239 [debug] [MainThread]: Executing "git --help"
+[0m19:46:24.526874 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:46:24.527581 [debug] [MainThread]: STDERR: "b''"
+[0m19:46:24.527937 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:46:24.528375 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:46:24.528892 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:46:24.529313 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dwhprojeto", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+
+[0m19:46:24.529725 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml> not found
+
+[0m19:46:24.532294 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.12640993, "process_user_time": 1.586393, "process_kernel_time": 0.200809, "process_mem_max_rss": "87540", "process_in_blocks": "82136", "process_out_blocks": "16", "command_success": false}
+[0m19:46:24.533927 [debug] [MainThread]: Command `dbt debug` failed at 19:46:24.533567 after 0.13 seconds
+[0m19:46:24.534589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c0751f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c075e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c4103e0>]}
+[0m19:46:24.535093 [debug] [MainThread]: Flushing usage events
+[0m14:00:31.639783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc848befd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8475f0e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8469aac30>]}
+
+
+============================== 14:00:31.646011 | 2b2bd790-e445-4ab9-afef-89971d05ebe3 ==============================
+[0m14:00:31.646011 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:00:31.646712 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/paco/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:00:31.668461 [info ] [MainThread]: dbt version: 1.8.2
+[0m14:00:31.668951 [info ] [MainThread]: python version: 3.12.3
+[0m14:00:31.669453 [info ] [MainThread]: python path: /home/paco/workshop/workshop-aberto-dw-do-zero/.venv/bin/python
+[0m14:00:31.669878 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m14:00:31.675414 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m14:00:31.676177 [info ] [MainThread]: Using profiles dir at /home/paco/.dbt
+[0m14:00:31.676639 [info ] [MainThread]: Using profiles.yml file at /home/paco/.dbt/profiles.yml
+[0m14:00:31.677074 [info ] [MainThread]: Using dbt_project.yml file at /home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml
+[0m14:00:31.677542 [info ] [MainThread]: Configuration:
+[0m14:00:31.677955 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m14:00:31.678343 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:00:31.678722 [info ] [MainThread]: Required dependencies:
+[0m14:00:31.679124 [debug] [MainThread]: Executing "git --help"
+[0m14:00:31.681628 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:00:31.682839 [debug] [MainThread]: STDERR: "b''"
+[0m14:00:31.683303 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:00:31.683727 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:00:31.684227 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:00:31.684768 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dwhprojeto", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+
+[0m14:00:31.685346 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/paco/workshop/workshop-aberto-dw-do-zero/dbt_project.yml> not found
+
+[0m14:00:31.688026 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.10294443, "process_user_time": 1.58631, "process_kernel_time": 0.102037, "process_mem_max_rss": "87712", "process_in_blocks": "41944", "process_out_blocks": "16", "command_success": false}
+[0m14:00:31.688798 [debug] [MainThread]: Command `dbt debug` failed at 14:00:31.688649 after 0.10 seconds
+[0m14:00:31.689267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc848befd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc846f28d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8473163c0>]}
+[0m14:00:31.689784 [debug] [MainThread]: Flushing usage events
